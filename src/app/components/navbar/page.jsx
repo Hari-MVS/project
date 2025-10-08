@@ -76,7 +76,7 @@ export const menuItems = [
         ],
     },
     { title: "Gallery", href: "/gallary" },
-    { title: "About", href: "/about/aboutpage" },
+    { title: "About", href: "/aboutpage" },
 ];
 
 // 🌿 MOBILE MENU ITEM
