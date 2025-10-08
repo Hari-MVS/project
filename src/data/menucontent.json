@@ -1,0 +1,299 @@
+{
+  "modular-indoor": {
+    "title": "Modular Plus Indoor",
+    "description": "A versatile indoor signage system designed to enhance office and public spaces. It offers customizable panels that can be easily rearranged or updated as per changing requirements. The sleek design ensures a professional and modern look.",
+    "images": [
+      "https://picsum.photos/800/600?random=1",
+      "https://picsum.photos/800/600?random=2",
+      "https://picsum.photos/800/600?random=3"
+    ]
+  },
+  "modular-outdoor": {
+    "title": "Modular Plus Outdoor",
+    "description": "Durable outdoor signage system built to withstand harsh weather conditions. Ideal for building exteriors, parking areas, and wayfinding, it provides high visibility and longevity. Its modular design allows for easy expansion and updates.",
+    "images": [
+      "https://picsum.photos/800/600?random=4",
+      "https://picsum.photos/800/600?random=5",
+      "https://picsum.photos/800/600?random=6"
+    ]
+  },
+  "isign-fix": {
+    "title": "I-Sign Fix",
+    "description": "A permanent signage solution for spaces requiring fixed and reliable display of information. This system is low-maintenance and ensures clear visibility at all times. Perfect for offices, hospitals, and public buildings.",
+    "images": [
+      "https://picsum.photos/800/600?random=7",
+      "https://picsum.photos/800/600?random=8",
+      "https://picsum.photos/800/600?random=9"
+    ]
+  },
+  "isign-display": {
+    "title": "I-Sign Display",
+    "description": "A flexible display signage system that allows quick updates and content replacement. It is ideal for environments where information changes frequently, such as reception areas or retail stores. The system is easy to use and highly adaptable.",
+    "images": [
+      "https://picsum.photos/800/600?random=10",
+      "https://picsum.photos/800/600?random=11",
+      "https://picsum.photos/800/600?random=12"
+    ]
+  },
+  "isign-flexsite": {
+    "title": "I-Sign Flex Site",
+    "description": "Designed for temporary or short-term installations, this signage system is perfect for construction sites, events, or promotional areas. It is highly portable, durable, and ensures visibility even in challenging conditions.",
+    "images": [
+      "https://picsum.photos/800/600?random=13",
+      "https://picsum.photos/800/600?random=14",
+      "https://picsum.photos/800/600?random=15"
+    ]
+  },
+  "strato": {
+    "title": "Strato Sign System",
+    "description": "A lightweight and modern signage solution suitable for both indoor and outdoor use. It combines aesthetic appeal with functional flexibility, making it ideal for offices, commercial spaces, and public areas.",
+    "images": [
+      "https://picsum.photos/800/600?random=16",
+      "https://picsum.photos/800/600?random=17",
+      "https://picsum.photos/800/600?random=18"
+    ]
+  },
+  "modular-pylon": {
+    "title": "Modular Pylon",
+    "description": "A tall freestanding signage solution for branding, wayfinding, or promotional purposes. Its modular design allows customization and easy updates, making it perfect for entrances, parking lots, or public spaces.",
+    "images": [
+      "https://picsum.photos/800/600?random=19",
+      "https://picsum.photos/800/600?random=20",
+      "https://picsum.photos/800/600?random=21"
+    ]
+  },
+  "totem": {
+    "title": "Totem Signage",
+    "description": "A sleek vertical signage system designed to make a visual impact at lobbies, entrances, or outdoor areas. It is highly visible and customizable, suitable for both corporate and commercial applications.",
+    "images": [
+      "https://picsum.photos/800/600?random=22",
+      "https://picsum.photos/800/600?random=23",
+      "https://picsum.photos/800/600?random=24"
+    ]
+  },
+  "illuminated-lightsigns": {
+    "title": "Illuminated Light Signs",
+    "description": "Backlit signage solutions that enhance visibility at night or in low-light areas. Perfect for branding, advertisements, and directional signs, these signs combine illumination with modern design.",
+    "images": [
+      "https://picsum.photos/800/600?random=25",
+      "https://picsum.photos/800/600?random=26",
+      "https://picsum.photos/800/600?random=27"
+    ]
+  },
+  "light-box": {
+    "title": "Light Box",
+    "description": "Enclosed display signage with internal lighting to showcase graphics, promotional material, or directional information. Ideal for both indoor and outdoor applications, it ensures clarity and visual appeal.",
+    "images": [
+      "https://picsum.photos/800/600?random=28",
+      "https://picsum.photos/800/600?random=29",
+      "https://picsum.photos/800/600?random=30"
+    ]
+  },
+  "opti-frame": {
+    "title": "Opti Frame",
+    "description": "A slim and versatile frame solution for posters, artwork, or photographs. It is designed for easy installation and replacement of content, making it ideal for retail, exhibitions, or office spaces.",
+    "images": [
+      "https://picsum.photos/800/600?random=31",
+      "https://picsum.photos/800/600?random=32",
+      "https://picsum.photos/800/600?random=33"
+    ]
+  },
+  "fabric-frame": {
+    "title": "Fabric Frame",
+    "description": "High-quality stretch fabric displays that create vibrant visuals for trade shows, exhibitions, or promotional setups. Lightweight and easy to assemble, these frames offer a professional finish.",
+    "images": [
+      "https://picsum.photos/800/600?random=34",
+      "https://picsum.photos/800/600?random=35",
+      "https://picsum.photos/800/600?random=36"
+    ]
+  },
+  "art-frame": {
+    "title": "Art Frame",
+    "description": "Decorative frames designed for artwork, certificates, or photography. They provide an elegant way to display visuals in offices, galleries, or personal spaces.",
+    "images": [
+      "https://picsum.photos/800/600?random=37",
+      "https://picsum.photos/800/600?random=38",
+      "https://picsum.photos/800/600?random=39"
+    ]
+  },
+  "led-thinlite": {
+    "title": "LED Thinlite",
+    "description": "Ultra-thin LED panels designed for illuminated displays. They provide even, bright lighting for promotional or informational graphics, combining modern aesthetics with functionality.",
+    "images": [
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=41",
+      "https://picsum.photos/800/600?random=42"
+    ]
+  },
+  "hospital": {
+    "title": "Hospital Signage",
+    "description": "Signage solutions specifically designed for healthcare facilities. They assist with wayfinding, patient guidance, and safety instructions, creating a smooth and organized experience for visitors and staff.",
+    "images": [
+      "https://picsum.photos/800/600?random=43",
+      "https://picsum.photos/800/600?random=44",
+      "https://picsum.photos/800/600?random=45"
+    ]
+  },
+  "education": {
+    "title": "Education Signage",
+    "description": "Tailored signage for educational institutions, including schools, colleges, and universities. They provide clear directions, classroom identification, and display of information to enhance campus navigation.",
+    "images": [
+      "https://picsum.photos/800/600?random=46",
+      "https://picsum.photos/800/600?random=47",
+      "https://picsum.photos/800/600?random=48"
+    ]
+  },
+  "corporate-offices": {
+    "title": "Corporate Office Signage",
+    "description": "Professional signage solutions for offices and commercial spaces. These include directional signs, branding displays, and interior identifiers that help create a structured and professional environment.",
+    "images": [
+      "https://picsum.photos/800/600?random=49",
+      "https://picsum.photos/800/600?random=50",
+      "https://picsum.photos/800/600?random=51"
+    ]
+  },
+  "industry-signages": {
+    "title": "Industry Signages",
+    "description": "Signage designed for industrial environments to ensure safety, guidance, and branding. They are durable, highly visible, and suitable for factories, warehouses, and production areas.",
+    "images": [
+      "https://picsum.photos/800/600?random=52",
+      "https://picsum.photos/800/600?random=53",
+      "https://picsum.photos/800/600?random=54"
+    ]
+  },
+  "banking": {
+    "title": "Banking Signage",
+    "description": "Signage solutions for banks and financial institutions to provide guidance, enhance branding, and improve customer experience. They combine clarity with a professional appearance.",
+    "images": [
+      "https://picsum.photos/800/600?random=55",
+      "https://picsum.photos/800/600?random=56",
+      "https://picsum.photos/800/600?random=57"
+    ]
+  },
+  "public-infrastructure": {
+    "title": "Public Infrastructure Signage",
+    "description": "Signage designed for public spaces such as airports, train stations, and government buildings. It ensures smooth navigation, safety, and effective communication for the general public.",
+    "images": [
+      "https://picsum.photos/800/600?random=58",
+      "https://picsum.photos/800/600?random=59",
+      "https://picsum.photos/800/600?random=60"
+    ]
+  },
+  "residential-realstate": {
+    "title": "Residential & Real Estate Signage",
+    "description": "Signage solutions for residential complexes, housing projects, and real estate developments. They include directional signs, entrance displays, and promotional signage to enhance visibility and aesthetics.",
+    "images": [
+      "https://picsum.photos/800/600?random=61",
+      "https://picsum.photos/800/600?random=62",
+      "https://picsum.photos/800/600?random=63"
+    ]
+  },
+  "retail": {
+    "title": "Retail Signage",
+    "description": "Custom signage solutions for retail stores to enhance branding, product visibility, and promotional campaigns. They include window displays, wall graphics, and point-of-sale signage.",
+    "images": [
+     "https://picsum.photos/800/600?random=64",
+     "https://picsum.photos/800/600?random=65",
+     "https://picsum.photos/800/600?random=66"
+    ]
+  },
+  "led-signages": {
+    "title": "LED Signages",
+    "description": "Custom LED signage solutions for indoor and outdoor applications. They provide bright, energy-efficient displays that enhance branding and visibility day and night.",
+    "images": [
+      "https://picsum.photos/800/600?random=67",
+      "https://picsum.photos/800/600?random=68",
+      "https://picsum.photos/800/600?random=69"
+    ]
+  },
+  "glow-signboards": {
+    "title": "Glow Sign Boards",
+    "description": "Illuminated signboards that attract attention and improve visibility in low-light areas. Suitable for stores, offices, and outdoor branding.",
+    "images": [
+      "https://picsum.photos/800/600?random=70",
+      "https://picsum.photos/800/600?random=71",
+      "https://picsum.photos/800/600?random=72"
+    ]
+  },
+  "eco-solvent": {
+    "title": "Eco Solvent Printing",
+    "description": "High-quality printing using eco-friendly solvents for banners, posters, and graphics. It ensures vibrant colors, durability, and environmental safety.",
+    "images": [
+      "https://picsum.photos/800/600?random=73",
+      "https://picsum.photos/800/600?random=74",
+      "https://picsum.photos/800/600?random=75"
+    ]
+  },
+  "oneway-vision": {
+    "title": "One Way Vision",
+    "description": "Specialized printing for windows and glass panels, providing visibility from one side while maintaining graphic impact. Ideal for storefronts and office partitions.",
+    "images": [
+      "https://picsum.photos/800/600?random=76",
+      "https://picsum.photos/800/600?random=77",
+      "https://picsum.photos/800/600?random=78"
+    ]
+  },
+  "brochure": {
+    "title": "Brochures",
+    "description": "Professionally designed brochures for marketing, promotions, or corporate use. They are compact, visually appealing, and provide key information effectively.",
+    "images": [
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40"
+    ]
+  },
+  "letterheads": {
+    "title": "Letterheads",
+    "description": "Custom letterhead designs to enhance corporate identity and professional correspondence. They combine branding elements with clean design.",
+    "images": [
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40"
+    ]
+  },
+  "multicolor": {
+    "title": "Multi-Color Printing",
+    "description": "High-quality printing service that allows multiple colors for promotional materials, signage, and marketing collaterals. Ensures vibrant and accurate color reproduction.",
+    "images": [
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40"
+    ]
+  },
+  "vinyl": {
+    "title": "Vinyl Printing",
+    "description": "Durable vinyl printing for banners, wall graphics, and outdoor signage. Ideal for long-term applications and easy to apply on different surfaces.",
+    "images": [
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40"
+    ]
+  },
+  "visiting-cards": {
+    "title": "Visiting Cards",
+    "description": "Professionally designed visiting cards that reflect brand identity and leave a lasting impression. Available in various styles, finishes, and formats.",
+    "images": [
+     "https://picsum.photos/800/600?random=40",
+     "https://picsum.photos/800/600?random=40",
+     "https://picsum.photos/800/600?random=40"
+    ]
+  },
+  "gallery": {
+    "title": "Gallery",
+    "description": "Explore our gallery of completed signage projects showcasing quality and creativity.",
+    "images": [
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40"
+    ]
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a professional signage company dedicated to providing innovative, high-quality branding and display solutions.",
+    "images": [
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40",
+      "https://picsum.photos/800/600?random=40"
+    ]
+  }
+}
