@@ -2,10 +2,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const PriceCalculator = ({ onGetQuote }) => {
+const PriceCalculator = () => {
     const [service, setService] = useState("LED Signage");
     const [size, setSize] = useState(50); // sq ft
     const [quality, setQuality] = useState("Standard");
+    const [userEmail, setUserEmail] = useState("");
 
     // price ranges per sq ft (min, max)
     const ranges = {
@@ -29,18 +30,45 @@ const PriceCalculator = ({ onGetQuote }) => {
 
     const { minPrice, maxPrice } = calcPrice();
 
-    const handleGetQuote = () => {
-        onGetQuote({
+    // const handleGetQuote = () => {
+    //     onGetQuote({
+    //         service,
+    //         size,
+    //         quality,
+    //         minPrice,
+    //         maxPrice
+    //     });
+    // };
+
+    const handleGetQuote = async () => {
+        if (!userEmail) {
+            alert("Please enter your email!");
+            return;
+        }
+
+        const data = {
             service,
             size,
             quality,
             minPrice,
-            maxPrice
+            maxPrice,
+            email: userEmail,
+        };
+
+        const res = await fetch("/api/send-quote", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
         });
+
+        if (res.ok) alert("Quote sent successfully!");
+        else alert("Failed to send quote.");
     };
 
+
+
     return (
-        <motion.aside 
+        <motion.aside
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -51,9 +79,9 @@ const PriceCalculator = ({ onGetQuote }) => {
 
             <div className="mt-4 space-y-3">
                 <label className="block text-sm text-slate-600">Service Type</label>
-                <select 
-                    value={service} 
-                    onChange={(e) => setService(e.target.value)} 
+                <select
+                    value={service}
+                    onChange={(e) => setService(e.target.value)}
                     className="w-full rounded-md border p-2"
                 >
                     <option>LED Signage</option>
@@ -63,31 +91,31 @@ const PriceCalculator = ({ onGetQuote }) => {
                 </select>
 
                 <label className="block text-sm text-slate-600">Size (sq ft): {size}</label>
-                <input 
-                    type="range" 
-                    min="1" 
-                    max="2000" 
-                    value={size} 
-                    onChange={(e) => setSize(Number(e.target.value))} 
-                    className="w-full" 
+                <input
+                    type="range"
+                    min="1"
+                    max="2000"
+                    value={size}
+                    onChange={(e) => setSize(Number(e.target.value))}
+                    className="w-full"
                 />
 
                 <label className="block text-sm text-slate-600">Quality</label>
                 <div className="flex gap-2">
-                    <button 
-                        onClick={() => setQuality("Standard")} 
+                    <button
+                        onClick={() => setQuality("Standard")}
                         className={`flex-1 p-2 rounded-md border ${quality === "Standard" ? "border-emerald-600 bg-emerald-50" : "bg-white"}`}
                     >
                         Standard
                     </button>
-                    <button 
-                        onClick={() => setQuality("Premium")} 
+                    <button
+                        onClick={() => setQuality("Premium")}
                         className={`flex-1 p-2 rounded-md border ${quality === "Premium" ? "border-emerald-600 bg-emerald-50" : "bg-white"}`}
                     >
                         Premium
                     </button>
-                    <button 
-                        onClick={() => setQuality("Enterprise")} 
+                    <button
+                        onClick={() => setQuality("Enterprise")}
                         className={`flex-1 p-2 rounded-md border ${quality === "Enterprise" ? "border-emerald-600 bg-emerald-50" : "bg-white"}`}
                     >
                         Enterprise
@@ -104,17 +132,26 @@ const PriceCalculator = ({ onGetQuote }) => {
                     </div>
                 </div>
 
+                <label className="block text-sm text-slate-600">Your Email</label>
+                <input
+                    type="email"
+                    value={userEmail}
+                    onChange={(e) => setUserEmail(e.target.value)}
+                    placeholder="you@example.com"
+                    className="w-full rounded-md border p-2"
+                />
+
                 <div className="mt-4 flex gap-2">
-                    <button 
-                        onClick={handleGetQuote} 
+                    <button
+                        onClick={handleGetQuote}
                         className="cursor-pointer flex-1 bg-emerald-600 text-white p-3 rounded-lg hover:bg-emerald-700 transition-colors"
                     >
                         Get Quote
                     </button>
-                    <a 
-                        className="flex-1 text-center p-3 border rounded-lg hover:bg-slate-50 transition-colors" 
-                        href="https://wa.me/919949066700" 
-                        target="_blank" 
+                    <a
+                        className="flex-1 text-center p-3 border rounded-lg hover:bg-slate-50 transition-colors"
+                        href="https://wa.me/919949066700"
+                        target="_blank"
                         rel="noreferrer"
                     >
                         WhatsApp

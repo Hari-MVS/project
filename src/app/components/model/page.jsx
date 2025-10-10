@@ -21,20 +21,29 @@ export default function QuoteModal({ isOpen, onClose }) {
 
     const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-    const handleSubmit = () => {
-        const subject = encodeURIComponent(`Quote Request: ${form.service}`);
-        const body = encodeURIComponent(`
-Service: ${form.service}
-Name: ${form.name}
-Phone: ${form.phone}
-Email: ${form.email}
-Business: ${form.business}
-    `);
-        window.open(`mailto:yourgmail@gmail.com?subject=${subject}&body=${body}`);
-        setForm({ service: "", name: "", phone: "", email: "", business: "" });
-        setStep(1);
-        onClose();
+    const handleSubmit = async () => {
+        // Basic validation
+        if (!form.email) {
+            alert("Please enter your email!");
+            return;
+        }
+
+        const res = await fetch("/api/send-quote", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(form), // send all form data
+        });
+
+        if (res.ok) {
+            alert("Quote request sent successfully!");
+            setForm({ service: "", name: "", phone: "", email: "", business: "", date: "", time: "", location: "", requirements: "" });
+            setStep(1);
+            onClose();
+        } else {
+            alert("Failed to send quote. Try again.");
+        }
     };
+
 
     if (!isOpen) return null;
 

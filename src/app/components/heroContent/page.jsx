@@ -28,7 +28,7 @@ export default function HeroContent({ onGetQuote }) {
     >
       {/* Left content */}
       <div ref={parent} className="space-y-4">
-        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight opacity-0 animate-fade-in-up">
+        <h1 className="gradient-green-text shiny text-5xl  font-extrabold tracking-tight opacity-0 animate-fade-in-up">
           Elevating Your Brand Identity with Quality & Innovation
         </h1>
 

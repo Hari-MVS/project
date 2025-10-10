@@ -122,10 +122,10 @@ const projects = [
   { id: 2, category: ["BACKLIT"], title: "Backlit Signage", img: bk },
   { id: 3, category: ["LED", "TERRACE"], title: "Entrance Canopy", img: er },
   { id: 4, category: ["TERRACE"], title: "Terrace signage", img: tr },
-  { id: 5, category: ["BACKLIT"], title: "Project 5", img: er },
-  { id: 6, category: ["LED"], title: "Project 6", img: sign1 },
-  { id: 7, category: ["TERRACE"], title: "Project 7", img: sign2 },
-  { id: 8, category: ["BACKLIT", "LED"], title: "Project 8", img: sign3 },
+  { id: 5, category: ["BACKLIT"], title: "Signage", img: er },
+  { id: 6, category: ["LED"], title: "Signage", img: sign1 },
+  { id: 7, category: ["TERRACE"], title: "Signage", img: sign2 },
+  { id: 8, category: ["BACKLIT", "LED"], title: "Signage", img: sign3 },
 ];
 
 const categories = ["LED", "BACKLIT", "TERRACE"];
@@ -169,7 +169,7 @@ export default function Gallery() {
 
   return (
     <section id="gallery" className="mt-12 px-5 md:px-10">
-      <h2 className="text-2xl font-semibold">Our Work Gallery</h2>
+      <h2 className="text-2xl font-semibold">Our Work <span className="gradient-blue-text shiny text-4xl font-semibold tracking-tight">Gallery</span></h2>
       <p className="text-slate-500 mt-1">
         Showcasing our expertise with live project updates
       </p>
@@ -204,7 +204,7 @@ export default function Gallery() {
           {filteredProjects.map((proj, index) => (
             <div
               key={proj.id}
-              className="group relative p-3 overflow-hidden aspect-[4/3] transition-all duration-500 ease-in-out hover:scale-[1.03] bg-[rgba(17,25,40,0.20)] backdrop-blur-lg border border-white/20 shadow-2xl hover:shadow-2xl hover:border-white/40"
+              className="group relative p-3 overflow-hidden aspect-[4/3] transition-all duration-500 ease-in-out hover:scale-[1.03]  backdrop-blur-lg border border-white/20 hover:shadow-2xl hover:border-white/40"
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 md:group-hover:opacity-100 transition-opacity duration-500" />
@@ -216,7 +216,7 @@ export default function Gallery() {
                 width={400}
                 height={300}
                 className="object-cover w-full h-full transition-all duration-500 ease-in-out md:group-hover:scale-110
-                [mask-image:linear-gradient(to_bottom,black_85%,transparent_95%),linear-gradient(to_right,black_90%,transparent_97%),linear-gradient(to_top,black_85%,transparent_99%)]
+                [mask-image:linear-gradient(to_bottom,black_85%,transparent_95%),linear-gradient(to_right,black_90%,transparent_97%),linear-gradient(to_left,black_90%,transparent_99%)]
                 [mask-composite:intersect]
                 md:group-hover:[mask-image:none]"
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
@@ -229,13 +229,13 @@ export default function Gallery() {
               <div
                 className="
                   absolute inset-0 flex items-end p-6 
-                  bg-gradient-to-t from-black/70 via-black/40 to-transparent 
+                     to-transparent 
                   transition-transform duration-500 
                   md:translate-y-full md:group-hover:translate-y-0
                   sm:translate-y-0
                 "
               >
-                <div className="bg-white/20 text-white px-2 py-1 border border-white/30 rounded-md text-center w-full sm:w-auto">
+                <div className="bg-black/40 text-white px-2 py-1 border border-white/30 text-center w-full sm:w-auto">
                   <h3 className="text-sm font-semibold">{proj.title}</h3>
                 </div>
               </div>

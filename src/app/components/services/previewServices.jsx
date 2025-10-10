@@ -57,7 +57,7 @@ const PreviewServices = () => {
       <div className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="gradient-green-text shiny text-5xl font-semibold tracking-tight">
               Our Premium Services
             </h2>
             <p className="text-gray-500 mb-8">
@@ -74,7 +74,7 @@ const PreviewServices = () => {
       <div className="max-w-8xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-12 animate-fade-in-up">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="gradient-rainbow-text shiny text-5xl font-semibold tracking-tight">
             Our Premium Services
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">

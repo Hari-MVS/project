@@ -63,24 +63,28 @@ export default function AboutPreview() {
             </div>
 
             <Link
-              href="/aboutpage"
-              className="inline-flex items-center px-6 py-3 bg-emerald-600 text-white font-medium rounded-lg hover:bg-emerald-700 transition-colors duration-300"
-            >
-              Learn More About Us
-              <svg
-                className="w-4 h-4 ml-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </Link>
+  href="/aboutpage"
+  className="relative inline-flex items-center px-6 py-3 font-medium rounded-lg text-white 
+             bg-emerald-600 shadow-[0_0_20px_3px_rgba(16,185,129,0.5)]
+             transition-all duration-500 hover:shadow-[0_0_35px_6px_rgba(16,185,129,0.8)] 
+             hover:bg-emerald-500 animate-glow"
+>
+  Learn More About Us
+  <svg
+    className="w-4 h-4 ml-2"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M9 5l7 7-7 7"
+    />
+  </svg>
+</Link>
+
           </div>
 
           {/* Right Content - Milestones */}
