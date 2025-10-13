@@ -11,3 +11,21 @@ module.exports = {
   },
   plugins: [],
 }
+
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      perspective: {
+        700: "700px",
+      },
+      translate: {
+        "z-100": "100px",
+      },
+      rotate: {
+        "x-20": "20deg",
+        "x-40": "40deg",
+      },
+    },
+  },
+};

@@ -75,7 +75,7 @@ export const menuItems = [
             { title: "Visiting Cards", href: "#visiting-cards" },
         ],
     },
-    { title: "Gallery", href: "/gallary" },
+    { title: "Gallery", href: "/gallerypage" },
     { title: "About", href: "/aboutpage" },
 ];
 
@@ -248,12 +248,15 @@ export default function Header() {
             <header className="sticky top-0 z-40 bg-white/95 md:bg-white/70 md:backdrop-blur-md border-b border-slate-200">
                 <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16">
-                        <img
-                            src="/logo2.jpg"
-                            alt="V Sign Enterprises"
-                            className="h-15 sm:h-16 w-auto object-contain"
-                            loading="lazy"
-                        />
+                        <Link href="/">
+                            <img
+                                src="https://wfswg7ecwfeueusu.public.blob.vercel-storage.com/logo2.jpg"
+                                alt="V Sign Enterprises"
+                                className="h-15 sm:h-16 w-auto object-contain"
+                                loading="lazy"
+
+                            />
+                        </Link>
 
                         {/* Desktop Menu */}
                         <nav className="hidden md:flex items-center gap-6 text-sm lg:text-base text-slate-700">

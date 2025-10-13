@@ -30,16 +30,6 @@ const PriceCalculator = () => {
 
     const { minPrice, maxPrice } = calcPrice();
 
-    // const handleGetQuote = () => {
-    //     onGetQuote({
-    //         service,
-    //         size,
-    //         quality,
-    //         minPrice,
-    //         maxPrice
-    //     });
-    // };
-
     const handleGetQuote = async () => {
         if (!userEmail) {
             alert("Please enter your email!");

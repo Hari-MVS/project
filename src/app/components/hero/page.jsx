@@ -10,8 +10,8 @@ export default function Hero({ openModal }) {
   const heroRef = useRef(null);
   const videoRef = useRef(null);
 
-  const desktopVideos = ["/video1.mp4", "/video2.mp4", "/video3.mp4"];
-  const mobileVideo = "/top.mp4";
+  const desktopVideos = ["https://wfswg7ecwfeueusu.public.blob.vercel-storage.com/videos/video1.mp4", "https://wfswg7ecwfeueusu.public.blob.vercel-storage.com/videos/video2.mp4", "https://wfswg7ecwfeueusu.public.blob.vercel-storage.com/videos/video3.mp4"];
+  const mobileVideo = "https://wfswg7ecwfeueusu.public.blob.vercel-storage.com/videos/top.mp4";
 
   useEffect(() => {
     // Detect mobile
@@ -51,13 +51,21 @@ export default function Hero({ openModal }) {
     tryPlay();
 
     // Desktop: rotate videos on ended
-    if (!isMobile && desktopVideos.length > 1) {
-      const handleEnded = () => {
+    // Desktop and Mobile looping behavior
+    const handleEnded = () => {
+      if (isMobile) {
+        // Mobile: replay same video
+        video.currentTime = 0;
+        video.play();
+      } else {
+        // Desktop: go to next video or loop back to first
         setCurrentVideo((prev) => (prev + 1) % desktopVideos.length);
-      };
-      video.addEventListener("ended", handleEnded);
-      return () => video.removeEventListener("ended", handleEnded);
-    }
+      }
+    };
+
+    video.addEventListener("ended", handleEnded);
+    return () => video.removeEventListener("ended", handleEnded);
+
   }, [currentVideo, isMobile]);
 
   return (
@@ -74,11 +82,12 @@ export default function Hero({ openModal }) {
           autoPlay
           muted
           playsInline
+          loop={isMobile}
           webkit-playsinline="true"
           preload="auto"
           controlsList="nodownload nofullscreen noremoteplayback"
           disablePictureInPicture
-          poster="/vimage.jpg"
+          poster="https://wfswg7ecwfeueusu.public.blob.vercel-storage.com/videos/vimage.jpg"
         >
           <source
             src={isMobile ? mobileVideo : desktopVideos[currentVideo]}
@@ -92,9 +101,8 @@ export default function Hero({ openModal }) {
 
       {/* Typing Text */}
       <div
-        className={`absolute top-24 left-6 md:left-16 z-10 max-w-3xl transform transition-all duration-700 ease-out ${
-          visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-        }`}
+        className={`absolute top-24 left-6 md:left-16 z-10 max-w-3xl transform transition-all duration-700 ease-out ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+          }`}
       >
         <TextType
           as="h1"
@@ -115,17 +123,14 @@ export default function Hero({ openModal }) {
 
       {/* Get Quote Button */}
       <div
-        className={`absolute bottom-6 md:bottom-10 right-6 md:right-10 z-10 transform transition-all duration-700 ease-out delay-300 ${
-          visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
-        }`}
+        className={`absolute bottom-6 md:bottom-10 right-6 md:right-10 z-10 transform transition-all duration-700 ease-out delay-300 ${visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+          }`}
       >
         <button
           onClick={openModal}
-          className={`cursor-pointer px-6 py-3 rounded-2xl bg-white/10 ${
-            isMobile ? "" : "backdrop-blur-md"
-          } border border-white/20 text-white font-semibold ${
-            isMobile ? "" : "shadow-lg"
-          } hover:scale-105 transition-transform duration-300`}
+          className={`cursor-pointer px-6 py-3 rounded-2xl bg-white/10 ${isMobile ? "" : "backdrop-blur-md"
+            } border border-white/20 text-white font-semibold ${isMobile ? "" : "shadow-lg"
+            } hover:scale-105 transition-transform duration-300`}
         >
           Get a Quote
         </button>

@@ -24,7 +24,7 @@ export default function Services({ openModal }) {
     ];
 
     return (
-        <section id="services" className="mt-12 px-4 md:px-0">
+        <section id="services" className="mt-12 px-4 md:px-6 ">
             <h2 className="text-2xl font-semibold">Most Popular <span className="gradient-gold-text shiny text-3xl font-semibold tracking-tight">Services</span></h2>
             <p className="text-slate-500 mt-1">
                 Comprehensive signage solutions with real-time pricing calculator

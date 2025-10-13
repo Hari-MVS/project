@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { useAutoAnimate } from "@formkit/auto-animate/react";
 import PricingCalculator from "../priceCalculator/page";
 
-export default function HeroContent({ onGetQuote }) {
+export default function HeroContent() {
   const [parent] = useAutoAnimate({ duration: 400, easing: "ease-in-out" });
   const sectionRef = useRef(null);
 
@@ -24,7 +24,7 @@ export default function HeroContent({ onGetQuote }) {
   return (
     <section
       ref={sectionRef}
-      className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 items-center py-12 transition-all duration-700 ease-in-out will-change-transform will-change-opacity"
+      className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-8 items-center py-12 transition-all duration-700 ease-in-out will-change-transform will-change-opacity p-6"
     >
       {/* Left content */}
       <div ref={parent} className="space-y-4">
@@ -75,7 +75,7 @@ export default function HeroContent({ onGetQuote }) {
         id="pricing-calculator-placeholder"
         className="opacity-0 animate-fade-in-up delay-500"
       >
-        <PricingCalculator onGetQuote={onGetQuote} />
+        <PricingCalculator />
       </div>
     </section>
   );
